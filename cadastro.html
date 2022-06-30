@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TeaBank</title>
+
+
+	<!-- Title icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style-All.css">
+	<link rel="stylesheet" href="css/cadastro-style.css">
+
+
+	<!-- JS -->
+	<script type="text/javascript" src="scripts/script-all.js" defer></script>
+
+	<script type="text/javascript" src="scripts/cadastro-script.js" defer></script>
+
+</head>
+<body>
+
+	<header class="header-class">
+		<nav class="header-nav">
+			<img src="img/MainIcon.png" alt="Imagem Logo">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about-us.html">ABOUT US</a></li>
+				<li><a href="login.html">LOGIN</a></li>
+				<li><a href="cadastro.html">CADASTRO</a></li>
+				<img src="img/MoonIcon.png" alt="Icone lua" id="icon">
+			</ul>
+		</nav>
+	</header>
+	
+	<main class="main-class">
+		<section class="home-section">
+			<div class="leftImg">
+				<h1>Cadastre-se</h1> 
+				<div id="UnderLoginText"></div>
+				<p class="UnderLoginText">Crie uma conta conosco para explorar as incriveis possibilidades de banking online.</p>
+				<img src="img/LoginLeftImg.png">
+			</div>
+			<div class="content">
+				<form onsubmit="return validateForm()" class="LoginDivContentForm">
+					<label>Primeiro nome:</label>
+					<label>Sobrenome:</label>
+					<div class="input1">
+						<input type="text" maxlength="20" name="accountName1" placeholder="Daniel" required>
+						<input type="text" maxlength="20" name="accountName2" placeholder="Moraes" required>
+					</div>
+					<label>ID da Conta:</label>
+					<label>Repita seu ID:</label>
+					<div class="input1">
+						<input type="text" maxlength="20" id="accountID" name="accountID" placeholder="Gyaan" required>
+						<p class="errorInputMenssage"><b>IDs Invalidos</b></p> 
+						<input type="text" maxlength="20" id="accountID-Repeat" name="accountID-Repeat" placeholder="Gyaan" required>
+						<p class="errorInputMenssage"><b>IDs Invalidos</b></p>
+					</div>
+					<label>Data de nascimento:</label>
+					<label>CPF:</label>
+					<div class="input1">
+						<input type="date" min="1900-01-01" max="2022-01-01" name="account-Date-of-Birth" placeholder="Daniel" required>
+						<input type="text" oninput="CPF_Formatter(this)" name="accountCPF" placeholder="xxx.xxx.xxx-xx" required>
+					</div>
+					<label>Digite sua senha: (<=12)</label>
+					<label>Repita sua senha:</label>
+					<div class="input1">
+						<input type="password" maxlength="12" name="accountPassword" placeholder="VUwSgXq6bs4a" required>
+						<input type="password" maxlength="12" name="accountPassword-repeat" placeholder="VUwSgXq6bs4a" required>
+					</div>
+					<div class="buttonsDiv">
+						<input type="submit" name="SubmitButton" value="Criar Conta">
+						<input type="reset" name="ResetButton" value="Limpar campos">
+						<label class="InputButtonLeftTextL">&ensp;&ensp;Ou&ensp;&ensp;</label>
+						<a class="InputButtonLeftTextA" href="login.html">Fazer Login</a>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+
+</body>
+</html>

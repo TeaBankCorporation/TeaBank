@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TeaBank</title>
+
+
+	<!-- Title icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style-All.css">
+	<link rel="stylesheet" href="css/login-style.css">
+	
+
+	<!-- JS -->
+	<script type="text/javascript" src="scripts/script-all.js" defer></script>
+
+	<script type="text/javascript" src="scripts/index-script.js" defer></script>
+
+</head>
+<body>
+
+	<header class="header-class">
+		<nav class="header-nav">
+			<img src="img/MainIcon.png" alt="Imagem Logo">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about-us.html">ABOUT US</a></li>
+				<li><a href="login.html">LOGIN</a></li>
+				<li><a href="cadastro.html">CADASTRO</a></li>
+				<img src="img/MoonIcon.png" alt="Icone lua" id="icon">
+			</ul>
+		</nav>
+	</header>
+	
+	
+	<section class="login-section">
+		<div class="leftImg">
+			<h1>Login</h1> 
+			<div id="UnderLoginText"></div>
+			<p class="UnderLoginText">Entre e explore as incriveis possibilidades de banking online.</p>
+			<img src="img/LoginLeftImg.png">
+		</div>
+		<div class="login-box">
+			<form action="">
+				<input type="text" name="accountID" placeholder="Insira seu ID da conta" required>
+				<input type="password" name="password" placeholder="Insira sua senha" required>
+				<div><input type="checkbox" name="KeepLogin" id="checkboxLogin"><label class="LembreseLabel" for="checkboxLogin">Lembre-se de mim</label></div>
+				<input type="submit" name="LoginButton" value="Entrar">
+				<label class="InputButtonLeftTextL">&ensp;&ensp;Ou&ensp;&ensp;</label>
+				<a class="InputButtonLeftTextA" href="cadastro.html">Crie uma nova conta</a>
+			</form>
+		</div>
+	</section>
+	
+
+
+</body>
+</html>

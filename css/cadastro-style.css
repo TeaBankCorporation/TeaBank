@@ -1,0 +1,186 @@
+body {
+	background: linear-gradient(-45deg, #80ed99a2, #38b00044, #89fc00aa, #73e2a744);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.leftImg {
+	height: 650px;
+	width: 277px;
+	position: absolute;
+	color: white;
+	font-family: sans-serif;
+	font-size: 20px;
+	top: 0%;
+	left: 50%;
+	transform: translate(-133%, 20%);
+ 	transition: all 0.2s ease-in-out;
+
+}
+.leftImg img {
+	border-radius: 10px 0px 0px 10px;
+	position: absolute;
+	height: 650px;
+	width: 277px;
+}
+.leftImg h1 {
+	z-index: 100;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	font-size: 2em;
+
+}
+.leftImg p {
+	z-index: 100;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+
+}
+
+#UnderLoginText {
+	width: 45px;
+	height: 0;
+	border: 1px solid white;
+	z-index: 100;
+	position: absolute;
+	top: 16.5%;
+	left: 10%;
+	transition: width 200ms ease;
+}
+.leftImg:hover #UnderLoginText {
+	width: 170px;
+}
+
+
+.content{
+	border-radius: 0px 10px 10px 0px;
+	border-right-style: groove;
+	border-top-style: groove;
+	border-bottom-style: groove;
+	border-color: var(--primary-color);
+	height: 648px;
+	width: 450px;
+	position: absolute;
+	color: var(--secondary-color);
+	background-color: var(--primaryHeader-color);
+	font-family: "monospace;", sans-serif;
+	font-size: 17px;
+	top: 0%;
+	left: 50%;
+	transform: translate(-20%, 20%);
+  	transition: all 0.2s ease-in-out;
+
+}
+.LoginDivContentForm {
+
+	transform: translateX(5%);
+	width: 100%;
+	padding-top: 30px;
+
+	/*display: flex;*/
+
+
+}
+.LoginDivContentForm label:nth-child(3n-1) {
+	position: absolute;
+	left: 225px;
+}
+.LoginDivContentForm div{
+	display: flex;
+}
+input[type=text],
+input[type=password],
+input[type=date]{
+	color: var(--secondary-color);
+	border-color: var(--secondary-color);
+	text-align: left;
+	width: 180px;
+	/*height: 50%;*/
+	font-size: 17px;
+	background: var(--primaryHeader-color);
+	outline: none;
+	padding: 12px 20px;
+	margin: 0  10px 55px 10px;
+	border-style: groove;
+	box-sizing: border-box;
+	transition: 0.25s;
+
+}
+input[type=date]{
+	font-size: 15px;
+}
+
+.LembreseLabel{
+	font-size: 17px;
+	color: var(--secondary-color);
+	position: absolute;
+	left: 30px;
+	bottom: 90px;
+}
+input[type=checkbox]{
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+}
+input[type=submit],
+input[type=reset] {
+	color: white;
+	background-color: #009400;
+	position: absolute;
+	left: 24px;
+	font-size: 17px;
+	padding: 15px 20px;
+	margin: 8px auto;
+	border-radius: 7px;
+	border-style: groove;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: 0.25s;
+}
+input[type=reset] {
+	transform: translateY(60px);
+	font-size: 13px;
+	padding: 5px 12px;
+	margin: 8px auto;
+}
+.buttonsDiv {
+	border-top-style: groove;
+	position: relative;
+	left: -23px;
+}
+.InputButtonLeftTextL {
+	position: absolute;
+	transform: translateY(30px);
+	left: 166px;
+	font-size: 17px;
+	cursor: auto;
+	color: gray;
+}
+.InputButtonLeftTextA {
+	position: absolute;
+	transform: translateY(30px);
+	left: 216px;
+	font-size: 17px;
+	color: #009400;
+	text-decoration: none;
+}
+
+.errorInputMenssage {
+	display: none;
+	color: red;
+}

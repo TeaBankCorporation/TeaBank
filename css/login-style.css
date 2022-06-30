@@ -1,0 +1,173 @@
+
+
+body {
+	background: linear-gradient(-45deg, #80ed99a2, #38b00044, #89fc00aa, #73e2a744);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.login-section {
+
+}
+
+
+.leftImg {
+	height: 350px;
+	width: 277px;
+	position: absolute;
+	color: white;
+	font-family: "monospace;", sans-serif;
+	font-size: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-133%, -50%);
+  	transition: all 0.2s ease-in-out;
+}
+.leftImg img {
+	border-radius: 10px 0px 0px 10px;
+	position: absolute;
+	height: 350px;
+	width: 277px;
+}
+.leftImg h1 {
+	z-index: 100;
+	position: absolute;
+	top: 15%;
+	left: 10%;
+
+	font-size: 2.25em;
+}
+.leftImg p {
+	z-index: 100;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+}
+
+#UnderLoginText {
+	width: 35px;
+	height: 0;
+	border: 1px solid white;
+	z-index: 100;
+	position: absolute;
+	top: 28%;
+	left: 10%;
+	transition: width 200ms ease;
+}
+.leftImg:hover #UnderLoginText {
+	width: 120px;
+}
+
+.login-box {
+	border-radius: 0px 10px 10px 0px;
+	border-right-style: groove;
+	border-top-style: groove;
+	border-bottom-style: groove;
+
+	border-color: var(--primary-color);
+	background-color: var(--secondaryDIV-color);
+	color: var(--secondary-color);
+	
+	height: 345px;
+	width: 450px;
+	font-size: 17px;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-20%, -50%);
+   	transition: all 0.2s ease-in-out;
+
+}
+
+.LoginDivContentForm {
+	position: absolute;
+	transform: translateX(10%);
+	width: 100%;
+
+}
+input[type=text],
+input[type=password]{
+	color: var(--secondary-color);
+	border-color: var(--secondary-color);
+	text-align: left;
+	width: 75%;
+	height: 50%;
+	font-size: 17px;
+	background: var(--secondaryDIV-color);;
+	outline: none;
+	padding: 12px 20px;
+	margin: 40px auto;
+	border-style: groove;
+	box-sizing: border-box;
+	transition: 0.25s;
+
+	display: block;
+}
+input[type=text]:focus{
+	border-radius: 5px;
+}
+input[type=password]:focus{
+	border-radius: 5px;
+}
+input[type=checkbox]{
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	
+	margin-left: 60px;
+	display:  inline-block;
+}
+.LembreseLabel{
+	font-size: 17px;
+	color: var(--secondary-color);
+	margin-left: 10px;
+
+   	transition: all 0.2s ease-in-out;
+}
+
+input[type=submit]{
+	color: white;
+	background-color: #009400;
+	font-size: 17px;
+	padding: 12px 20px;
+	margin: 8px auto;
+	border-radius: 7px;
+	border-style: groove;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: 0.25s;
+
+	margin-left: 60px;
+	margin-top: 30px;
+	display: inline-block;
+
+}
+.InputButtonLeftTextL {
+	font-size: 17px;
+	cursor: auto;
+	color: gray;
+}
+.InputButtonLeftTextA {
+	font-size: 17px;
+	color: #009400;
+	text-decoration: none;
+}
+
+@media (max-width: 740px){
+
+}
